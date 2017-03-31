@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sat Mar 04 23:53:45 2017
+# Process ID: 10396
+# Current directory: C:/GitLocalRepo/Verilog-Design-Xilinx/ALU/ALU.sim/sim_1/behav
+# Command line: wbtcv.exe -mode batch -source C:/GitLocalRepo/Verilog-Design-Xilinx/ALU/ALU.sim/sim_1/behav/xsim.dir/alu_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/GitLocalRepo/Verilog-Design-Xilinx/ALU/ALU.sim/sim_1/behav/webtalk.log
+# Journal file: C:/GitLocalRepo/Verilog-Design-Xilinx/ALU/ALU.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source C:/GitLocalRepo/Verilog-Design-Xilinx/ALU/ALU.sim/sim_1/behav/xsim.dir/alu_tb_behav/webtalk/xsim_webtalk.tcl -notrace

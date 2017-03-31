@@ -1,0 +1,67 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Feb 15 15:58:45 2017
+# Process ID: 5804
+# Current directory: C:/Users/Anahit Sarao/Documents/cmpe125/voting_machine
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4412 C:\Users\Anahit Sarao\Documents\cmpe125\voting_machine\voting_machine.xpr
+# Log file: C:/Users/Anahit Sarao/Documents/cmpe125/voting_machine/vivado.log
+# Journal file: C:/Users/Anahit Sarao/Documents/cmpe125/voting_machine\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Anahit Sarao/Documents/cmpe125/voting_machine/voting_machine.xpr}
+launch_simulation
+source voting_rule_tb.tcl
+set_property flow {Vivado Synthesis 2016} [get_runs synth_1]
+reset_run impl_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+close_sim
+launch_simulation
+source voting_rule_tb.tcl
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Anahit Sarao/Documents/cmpe125/voting_machine/voting_machine.runs/impl_1/voting_machine_fpga.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Anahit Sarao/Documents/cmpe125/voting_machine/voting_machine.runs/impl_1/voting_machine_fpga.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property flow {Vivado Implementation 2016} [get_runs impl_1]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Anahit Sarao/Documents/cmpe125/voting_machine/voting_machine.runs/impl_1/voting_machine_fpga.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+close_hw
+close_sim
+launch_simulation
+source voting_rule_tb.tcl
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Anahit Sarao/Documents/cmpe125/voting_machine/voting_machine.runs/impl_1/voting_machine_fpga.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Anahit Sarao/Documents/cmpe125/voting_machine/voting_machine.runs/impl_1/voting_machine_fpga.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Anahit Sarao/Documents/cmpe125/voting_machine/voting_machine.runs/impl_1/voting_machine_fpga.bit} [lindex [get_hw_devices xc7a100t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a100t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+synth_design -rtl -name rtl_1
+close_sim

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sat Mar 04 22:49:16 2017
+# Process ID: 10468
+# Current directory: C:/GitLocalRepo/Verilog-Design-Xilinx/Encoder/Encoder.runs/synth_1
+# Command line: vivado.exe -log decoder_for.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source decoder_for.tcl
+# Log file: C:/GitLocalRepo/Verilog-Design-Xilinx/Encoder/Encoder.runs/synth_1/decoder_for.vds
+# Journal file: C:/GitLocalRepo/Verilog-Design-Xilinx/Encoder/Encoder.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source decoder_for.tcl -notrace

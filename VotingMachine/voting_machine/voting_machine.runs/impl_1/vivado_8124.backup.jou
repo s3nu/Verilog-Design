@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Feb 15 16:02:48 2017
+# Process ID: 8124
+# Current directory: C:/Users/Anahit Sarao/Documents/cmpe125/voting_machine/voting_machine.runs/impl_1
+# Command line: vivado.exe -log voting_machine_fpga.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source voting_machine_fpga.tcl -notrace
+# Log file: C:/Users/Anahit Sarao/Documents/cmpe125/voting_machine/voting_machine.runs/impl_1/voting_machine_fpga.vdi
+# Journal file: C:/Users/Anahit Sarao/Documents/cmpe125/voting_machine/voting_machine.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source voting_machine_fpga.tcl -notrace

@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sat Mar 11 05:25:25 2017
+# Process ID: 4420
+# Current directory: C:/Users/Anahit Sarao/Documents/gitlocal/Verilog-Design-Xilinx/ALU/ALU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2188 C:\Users\Anahit Sarao\Documents\gitlocal\Verilog-Design-Xilinx\ALU\ALU\ALU.xpr
+# Log file: C:/Users/Anahit Sarao/Documents/gitlocal/Verilog-Design-Xilinx/ALU/ALU/vivado.log
+# Journal file: C:/Users/Anahit Sarao/Documents/gitlocal/Verilog-Design-Xilinx/ALU/ALU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Anahit Sarao/Documents/gitlocal/Verilog-Design-Xilinx/ALU/ALU/ALU.xpr}
