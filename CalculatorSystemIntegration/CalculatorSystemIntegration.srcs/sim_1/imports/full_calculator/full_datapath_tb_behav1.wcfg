@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="full_datapath_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="full_datapath_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="130422083334fs"></ZoomStartTime>
+      <ZoomEndTime time="130709583335fs"></ZoomEndTime>
+      <Cursor1Time time="130470000000fs"></Cursor1Time>
+   </zoom_setting>
+   <WVObjectSize size="33" />
+   <wvobject fp_name="/full_datapath_tb/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+      <obj_property name="CustomSignalColor">#FF0080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/full_datapath_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/full_datapath_tb/X" type="array">
+      <obj_property name="ElementShortName">X[3:0]</obj_property>
+      <obj_property name="ObjectShortName">X[3:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/full_datapath_tb/Y" type="array">
+      <obj_property name="ElementShortName">Y[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Y[3:0]</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/full_datapath_tb/OP_in" type="array">
+      <obj_property name="ElementShortName">OP_in[2:0]</obj_property>
+      <obj_property name="ObjectShortName">OP_in[2:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FFA500</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/full_datapath_tb/Hi" type="array">
+      <obj_property name="ElementShortName">Hi[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Hi[3:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/full_datapath_tb/Lo" type="array">
+      <obj_property name="ElementShortName">Lo[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Lo[3:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/full_datapath_tb/done_calc" type="logic">
+      <obj_property name="ElementShortName">done_calc</obj_property>
+      <obj_property name="ObjectShortName">done_calc</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/full_datapath_tb/done_div" type="logic">
+      <obj_property name="ElementShortName">done_div</obj_property>
+      <obj_property name="ObjectShortName">done_div</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/full_datapath_tb/errFlag" type="logic">
+      <obj_property name="ElementShortName">errFlag</obj_property>
+      <obj_property name="ObjectShortName">errFlag</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/full_datapath_tb/OP_out" type="array">
+      <obj_property name="ElementShortName">OP_out[2:0]</obj_property>
+      <obj_property name="ObjectShortName">OP_out[2:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/full_datapath_tb/x_en" type="logic">
+      <obj_property name="ElementShortName">x_en</obj_property>
+      <obj_property name="ObjectShortName">x_en</obj_property>
+      <obj_property name="CustomSignalColor">#800080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/full_datapath_tb/y_en" type="logic">
+      <obj_property name="ElementShortName">y_en</obj_property>
+      <obj_property name="ObjectShortName">y_en</obj_property>
+      <obj_property name="CustomSignalColor">#800080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/full_datapath_tb/f_en" type="logic">
+      <obj_property name="ElementShortName">f_en</obj_property>
+      <obj_property name="ObjectShortName">f_en</obj_property>
+      <obj_property name="CustomSignalColor">#800080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/full_datapath_tb/hi_en" type="logic">
+      <obj_property name="ElementShortName">hi_en</obj_property>
+      <obj_property name="ObjectShortName">hi_en</obj_property>
+      <obj_property name="CustomSignalColor">#800080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/full_datapath_tb/lo_en" type="logic">
+      <obj_property name="ElementShortName">lo_en</obj_property>
+      <obj_property name="ObjectShortName">lo_en</obj_property>
+      <obj_property name="CustomSignalColor">#800080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/full_datapath_tb/sel_lo" type="array">
+      <obj_property name="ElementShortName">sel_lo[1:0]</obj_property>
+      <obj_property name="ObjectShortName">sel_lo[1:0]</obj_property>
+      <obj_property name="CustomSignalColor">#800080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/full_datapath_tb/sel_hi" type="array">
+      <obj_property name="ElementShortName">sel_hi[1:0]</obj_property>
+      <obj_property name="ObjectShortName">sel_hi[1:0]</obj_property>
+      <obj_property name="CustomSignalColor">#800080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/full_datapath_tb/op_calc" type="array">
+      <obj_property name="ElementShortName">op_calc[1:0]</obj_property>
+      <obj_property name="ObjectShortName">op_calc[1:0]</obj_property>
+      <obj_property name="CustomSignalColor">#800080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/full_datapath_tb/go_calc" type="logic">
+      <obj_property name="ElementShortName">go_calc</obj_property>
+      <obj_property name="ObjectShortName">go_calc</obj_property>
+      <obj_property name="CustomSignalColor">#800080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/full_datapath_tb/go_div" type="logic">
+      <obj_property name="ElementShortName">go_div</obj_property>
+      <obj_property name="ObjectShortName">go_div</obj_property>
+      <obj_property name="CustomSignalColor">#800080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/full_datapath_tb/sel_p" type="logic">
+      <obj_property name="ElementShortName">sel_p</obj_property>
+      <obj_property name="ObjectShortName">sel_p</obj_property>
+      <obj_property name="CustomSignalColor">#800080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/full_datapath_tb/CTRL" type="array">
+      <obj_property name="ElementShortName">CTRL[13:0]</obj_property>
+      <obj_property name="ObjectShortName">CTRL[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/full_datapath_tb/IDLE" type="array">
+      <obj_property name="ElementShortName">IDLE[13:0]</obj_property>
+      <obj_property name="ObjectShortName">IDLE[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/full_datapath_tb/LOAD" type="array">
+      <obj_property name="ElementShortName">LOAD[13:0]</obj_property>
+      <obj_property name="ObjectShortName">LOAD[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/full_datapath_tb/WAIT" type="array">
+      <obj_property name="ElementShortName">WAIT[13:0]</obj_property>
+      <obj_property name="ObjectShortName">WAIT[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/full_datapath_tb/CWAIT0" type="array">
+      <obj_property name="ElementShortName">CWAIT0[13:0]</obj_property>
+      <obj_property name="ObjectShortName">CWAIT0[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/full_datapath_tb/MWAIT" type="array">
+      <obj_property name="ElementShortName">MWAIT[13:0]</obj_property>
+      <obj_property name="ObjectShortName">MWAIT[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/full_datapath_tb/DIVGO" type="array">
+      <obj_property name="ElementShortName">DIVGO[13:0]</obj_property>
+      <obj_property name="ObjectShortName">DIVGO[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/full_datapath_tb/DWAIT0" type="array">
+      <obj_property name="ElementShortName">DWAIT0[13:0]</obj_property>
+      <obj_property name="ObjectShortName">DWAIT0[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/full_datapath_tb/PASS0" type="array">
+      <obj_property name="ElementShortName">PASS0[13:0]</obj_property>
+      <obj_property name="ObjectShortName">PASS0[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/full_datapath_tb/PASS1" type="array">
+      <obj_property name="ElementShortName">PASS1[13:0]</obj_property>
+      <obj_property name="ObjectShortName">PASS1[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/full_datapath_tb/DONE" type="array">
+      <obj_property name="ElementShortName">DONE[13:0]</obj_property>
+      <obj_property name="ObjectShortName">DONE[13:0]</obj_property>
+   </wvobject>
+</wave_config>
