@@ -1,0 +1,796 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Tue May 16 12:05:29 2017
+# Process ID: 5532
+# Current directory: C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.runs/synth_1
+# Command line: vivado.exe -log calcsys_top_level.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source calcsys_top_level.tcl
+# Log file: C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.runs/synth_1/calcsys_top_level.vds
+# Journal file: C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source calcsys_top_level.tcl -notrace
+Command: synth_design -top calcsys_top_level -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3880 
+WARNING: [Synth 8-2611] redeclaration of ansi port aD is not allowed [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/multiplier.v:17]
+WARNING: [Synth 8-2611] redeclaration of ansi port bD is not allowed [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/multiplier.v:17]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 294.043 ; gain = 84.121
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'calcsys_top_level' [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/fullcalcFPGA.v:3]
+INFO: [Synth 8-638] synthesizing module 'clk_gen' [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/fullcalcFPGA.v:34]
+INFO: [Synth 8-256] done synthesizing module 'clk_gen' (1#1) [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/fullcalcFPGA.v:34]
+INFO: [Synth 8-638] synthesizing module 'button_debouncer' [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/fullcalcFPGA.v:64]
+	Parameter depth bound to: 16 - type: integer 
+	Parameter history_max bound to: 65535 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'button_debouncer' (2#1) [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/fullcalcFPGA.v:64]
+INFO: [Synth 8-638] synthesizing module 'fullcalc' [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/fullcalc.v:3]
+INFO: [Synth 8-638] synthesizing module 'full_datapath' [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/full_datapath.v:3]
+INFO: [Synth 8-638] synthesizing module 'err_comparator' [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/full_datapath.v:36]
+INFO: [Synth 8-256] done synthesizing module 'err_comparator' (3#1) [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/full_datapath.v:36]
+INFO: [Synth 8-638] synthesizing module 'd_reg' [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/d_reg.v:2]
+	Parameter WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'd_reg' (4#1) [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/d_reg.v:2]
+INFO: [Synth 8-638] synthesizing module 'd_reg__parameterized0' [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/d_reg.v:2]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'd_reg__parameterized0' (4#1) [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/d_reg.v:2]
+INFO: [Synth 8-638] synthesizing module 'd_reg__parameterized1' [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/d_reg.v:2]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'd_reg__parameterized1' (4#1) [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/d_reg.v:2]
+INFO: [Synth 8-638] synthesizing module 'small_calc' [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/smallCalc.v:2]
+INFO: [Synth 8-638] synthesizing module 'CU' [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/smallCalc_ctrl_unit.v:2]
+	Parameter IDLE bound to: 4'b0000 
+	Parameter LD1 bound to: 4'b0001 
+	Parameter LD2 bound to: 4'b0010 
+	Parameter WAIT bound to: 4'b0011 
+	Parameter ADD bound to: 4'b0100 
+	Parameter SUB bound to: 4'b0101 
+	Parameter AND bound to: 4'b0110 
+	Parameter XOR bound to: 4'b0111 
+	Parameter DONE bound to: 4'b1000 
+	Parameter IDLE_0 bound to: 15'b100000000000000 
+	Parameter LD1_1 bound to: 15'b000000001010000 
+	Parameter LD2_2 bound to: 15'b010000001100000 
+	Parameter WAIT_3 bound to: 15'b100000000000000 
+	Parameter ADD_4 bound to: 15'b111011101110000 
+	Parameter SUB_5 bound to: 15'b111011101110100 
+	Parameter AND_6 bound to: 15'b111011101111000 
+	Parameter XOR_7 bound to: 15'b111011101111100 
+	Parameter DONE_8 bound to: 15'b101111110001011 
+INFO: [Synth 8-256] done synthesizing module 'CU' (5#1) [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/smallCalc_ctrl_unit.v:2]
+INFO: [Synth 8-638] synthesizing module 'DP' [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/smallCalc_datapath.v:3]
+INFO: [Synth 8-638] synthesizing module 'MUX1' [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/mux1.v:2]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'MUX1' (6#1) [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/mux1.v:2]
+WARNING: [Synth 8-689] width (36) of port connection 'in1' does not match port width (5) of module 'MUX1' [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/smallCalc_datapath.v:14]
+WARNING: [Synth 8-689] width (36) of port connection 'in2' does not match port width (5) of module 'MUX1' [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/smallCalc_datapath.v:15]
+INFO: [Synth 8-638] synthesizing module 'RF' [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/smallCalc_rf.v:2]
+INFO: [Synth 8-256] done synthesizing module 'RF' (7#1) [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/smallCalc_rf.v:2]
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/smallCalc_alu.v:2]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (8#1) [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/smallCalc_alu.v:2]
+INFO: [Synth 8-638] synthesizing module 'mux2' [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/mux2.v:2]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2' (9#1) [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/mux2.v:2]
+INFO: [Synth 8-256] done synthesizing module 'DP' (10#1) [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/smallCalc_datapath.v:3]
+WARNING: [Synth 8-689] width (4) of port connection 'out' does not match port width (5) of module 'DP' [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/smallCalc.v:45]
+INFO: [Synth 8-256] done synthesizing module 'small_calc' (11#1) [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/smallCalc.v:2]
+INFO: [Synth 8-638] synthesizing module 'multiplier' [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/multiplier.v:3]
+INFO: [Synth 8-638] synthesizing module 'd_reg__parameterized2' [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/d_reg.v:2]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'd_reg__parameterized2' (11#1) [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/d_reg.v:2]
+INFO: [Synth 8-638] synthesizing module 'd_reg__parameterized3' [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/d_reg.v:2]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'd_reg__parameterized3' (11#1) [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/d_reg.v:2]
+INFO: [Synth 8-638] synthesizing module 'partial_prod' [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/multi_pp.v:2]
+INFO: [Synth 8-638] synthesizing module 'andMod' [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/and_mod.v:2]
+INFO: [Synth 8-256] done synthesizing module 'andMod' (12#1) [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/and_mod.v:2]
+INFO: [Synth 8-256] done synthesizing module 'partial_prod' (13#1) [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/multi_pp.v:2]
+INFO: [Synth 8-638] synthesizing module 'shifter' [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/multi_shifter.v:2]
+INFO: [Synth 8-256] done synthesizing module 'shifter' (14#1) [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/multi_shifter.v:2]
+INFO: [Synth 8-638] synthesizing module 'd_reg__parameterized4' [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/d_reg.v:2]
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'd_reg__parameterized4' (14#1) [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/d_reg.v:2]
+INFO: [Synth 8-638] synthesizing module 'd_reg__parameterized5' [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/d_reg.v:2]
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'd_reg__parameterized5' (14#1) [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/d_reg.v:2]
+INFO: [Synth 8-638] synthesizing module 'cla_gen' [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/multi_cla.v:2]
+INFO: [Synth 8-638] synthesizing module 'half_adder' [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/half_adder.v:2]
+INFO: [Synth 8-256] done synthesizing module 'half_adder' (15#1) [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/half_adder.v:2]
+INFO: [Synth 8-638] synthesizing module 'c_gen' [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/cla_gen.v:2]
+INFO: [Synth 8-256] done synthesizing module 'c_gen' (16#1) [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/cla_gen.v:2]
+INFO: [Synth 8-256] done synthesizing module 'cla_gen' (17#1) [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/multi_cla.v:2]
+INFO: [Synth 8-638] synthesizing module 'd_reg__parameterized6' [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/d_reg.v:2]
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'd_reg__parameterized6' (17#1) [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/d_reg.v:2]
+INFO: [Synth 8-256] done synthesizing module 'multiplier' (18#1) [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/multiplier.v:3]
+INFO: [Synth 8-638] synthesizing module 'divider' [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/divider.v:2]
+INFO: [Synth 8-638] synthesizing module 'dp' [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/div_datapath.v:3]
+INFO: [Synth 8-638] synthesizing module 'mux2__parameterized0' [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/mux2.v:2]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2__parameterized0' (18#1) [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/mux2.v:2]
+INFO: [Synth 8-638] synthesizing module 'mux2__parameterized1' [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/mux2.v:2]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2__parameterized1' (18#1) [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/mux2.v:2]
+INFO: [Synth 8-638] synthesizing module 'y_reg' [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/div_y_reg.v:2]
+INFO: [Synth 8-256] done synthesizing module 'y_reg' (19#1) [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/div_y_reg.v:2]
+INFO: [Synth 8-638] synthesizing module 'x_reg' [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/div_x_reg.v:2]
+WARNING: [Synth 8-567] referenced signal 'out' should be on the sensitivity list [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/div_x_reg.v:22]
+INFO: [Synth 8-256] done synthesizing module 'x_reg' (20#1) [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/div_x_reg.v:2]
+INFO: [Synth 8-638] synthesizing module 'r_reg' [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/div_r_reg.v:2]
+INFO: [Synth 8-256] done synthesizing module 'r_reg' (21#1) [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/div_r_reg.v:2]
+INFO: [Synth 8-638] synthesizing module 'comparator' [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/comparator.v:2]
+INFO: [Synth 8-256] done synthesizing module 'comparator' (22#1) [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/comparator.v:2]
+INFO: [Synth 8-638] synthesizing module 'sub' [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/subtractor.v:2]
+INFO: [Synth 8-256] done synthesizing module 'sub' (23#1) [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/subtractor.v:2]
+INFO: [Synth 8-638] synthesizing module 'ud_counter' [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/div_ud_cntr.v:2]
+INFO: [Synth 8-256] done synthesizing module 'ud_counter' (24#1) [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/div_ud_cntr.v:2]
+INFO: [Synth 8-256] done synthesizing module 'dp' (25#1) [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/div_datapath.v:3]
+INFO: [Synth 8-638] synthesizing module 'cu' [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/div_cntrl_unit.v:2]
+	Parameter IDLE bound to: 4'b0000 
+	Parameter LD bound to: 4'b0001 
+	Parameter RXSL bound to: 4'b0010 
+	Parameter DEC bound to: 4'b0011 
+	Parameter SUB bound to: 4'b0100 
+	Parameter GTE bound to: 4'b0101 
+	Parameter LT bound to: 4'b0110 
+	Parameter RSR0 bound to: 4'b0111 
+	Parameter DONE bound to: 4'b1000 
+	Parameter IDLE_0 bound to: 14'b11100000000000 
+	Parameter LD_1 bound to: 14'b11110010011100 
+	Parameter RXSL_2 bound to: 14'b11101001000000 
+	Parameter DEC_3 bound to: 14'b11100000001000 
+	Parameter SUB_4 bound to: 14'b01110000010000 
+	Parameter GTE_5 bound to: 14'b11101001100000 
+	Parameter LT_6 bound to: 14'b11101001000000 
+	Parameter RSR0_7 bound to: 14'b11100100000000 
+	Parameter DONE_8 bound to: 14'b10000000000001 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/div_cntrl_unit.v:97]
+INFO: [Synth 8-256] done synthesizing module 'cu' (26#1) [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/div_cntrl_unit.v:2]
+INFO: [Synth 8-256] done synthesizing module 'divider' (27#1) [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/divider.v:2]
+INFO: [Synth 8-638] synthesizing module 'mux2__parameterized2' [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/mux2.v:2]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2__parameterized2' (27#1) [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/mux2.v:2]
+INFO: [Synth 8-638] synthesizing module 'MUX1__parameterized0' [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/mux1.v:2]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'MUX1__parameterized0' (27#1) [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/mux1.v:2]
+INFO: [Synth 8-638] synthesizing module 'MUX1__parameterized1' [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/mux1.v:2]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'MUX1__parameterized1' (27#1) [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/mux1.v:2]
+WARNING: [Synth 8-324] index 4 out of range [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/full_datapath.v:31]
+INFO: [Synth 8-638] synthesizing module 'd_reg__parameterized7' [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/d_reg.v:2]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'd_reg__parameterized7' (27#1) [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/d_reg.v:2]
+INFO: [Synth 8-638] synthesizing module 'd_reg__parameterized8' [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/d_reg.v:2]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'd_reg__parameterized8' (27#1) [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/d_reg.v:2]
+INFO: [Synth 8-256] done synthesizing module 'full_datapath' (28#1) [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/full_datapath.v:3]
+INFO: [Synth 8-638] synthesizing module 'full_control_unit' [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/full_control_unit.v:2]
+	Parameter IDLE bound to: 4'b0000 
+	Parameter LOAD bound to: 4'b0001 
+	Parameter WAIT bound to: 4'b0010 
+	Parameter CGO bound to: 4'b0011 
+	Parameter MWAIT bound to: 4'b0100 
+	Parameter DIVGO bound to: 4'b0101 
+	Parameter CWAIT bound to: 4'b0110 
+	Parameter DWAIT bound to: 4'b0111 
+	Parameter PASS bound to: 4'b1000 
+	Parameter DONE bound to: 4'b1001 
+	Parameter IDLE0 bound to: 15'b000000000000000 
+	Parameter LOAD0 bound to: 15'b111000000000000 
+	Parameter WAIT0 bound to: 15'b000000000000000 
+	Parameter CGO0 bound to: 15'b000100000001000 
+	Parameter CWAIT0 bound to: 15'b000100000101110 
+	Parameter CWAIT1 bound to: 15'b000101000101110 
+	Parameter CWAIT2 bound to: 15'b000110000101110 
+	Parameter CWAIT3 bound to: 15'b000111000101110 
+	Parameter MWAIT0 bound to: 15'b000000001010110 
+	Parameter DIVGO0 bound to: 15'b000000100011000 
+	Parameter DWAIT0 bound to: 15'b000000101111110 
+	Parameter PASSA bound to: 15'b000000000000010 
+	Parameter PASSB bound to: 15'b000000010000010 
+	Parameter DONE0 bound to: 15'b000000000000001 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/full_control_unit.v:125]
+WARNING: [Synth 8-567] referenced signal 'OP_code' should be on the sensitivity list [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/full_control_unit.v:124]
+INFO: [Synth 8-256] done synthesizing module 'full_control_unit' (29#1) [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/full_control_unit.v:2]
+INFO: [Synth 8-256] done synthesizing module 'fullcalc' (30#1) [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/fullcalc.v:3]
+INFO: [Synth 8-638] synthesizing module 'hex_to_7seg' [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/fullcalcFPGA.v:118]
+INFO: [Synth 8-226] default block is never used [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/fullcalcFPGA.v:123]
+INFO: [Synth 8-256] done synthesizing module 'hex_to_7seg' (31#1) [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/fullcalcFPGA.v:118]
+INFO: [Synth 8-638] synthesizing module 'led_mux' [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/fullcalcFPGA.v:81]
+INFO: [Synth 8-226] default block is never used [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/fullcalcFPGA.v:104]
+INFO: [Synth 8-256] done synthesizing module 'led_mux' (32#1) [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/fullcalcFPGA.v:81]
+INFO: [Synth 8-256] done synthesizing module 'calcsys_top_level' (33#1) [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/fullcalcFPGA.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 314.871 ; gain = 104.949
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 314.871 ; gain = 104.949
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/constrs_1/new/calcsys_constraints.xdc]
+Finished Parsing XDC File [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/constrs_1/new/calcsys_constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/constrs_1/new/calcsys_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/calcsys_top_level_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/calcsys_top_level_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 633.133 ; gain = 0.012
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 633.133 ; gain = 423.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 633.133 ; gain = 423.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 633.133 ; gain = 423.211
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "count1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_4sec" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_5KHz" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "debounced_button0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'CS_reg' in module 'CU'
+INFO: [Synth 8-5544] ROM "CTRL" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "NS" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/smallCalc_alu.v:7]
+INFO: [Synth 8-5544] ROM "zFlag" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'CS_reg' in module 'cu'
+INFO: [Synth 8-5544] ROM "CTRL" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "NS" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "NS" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "NS" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'CS_reg' in module 'full_control_unit'
+INFO: [Synth 8-5544] ROM "CTRL" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "counter" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "CTRL" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "NS" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "NS" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "NS" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0000 |                             0000
+                     LD1 |                             0001 |                             0001
+                     LD2 |                             0010 |                             0010
+                    WAIT |                             0011 |                             0011
+                     ADD |                             0100 |                             0100
+                     SUB |                             0101 |                             0101
+                     AND |                             0110 |                             0110
+                     XOR |                             0111 |                             0111
+                    DONE |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'CS_reg' using encoding 'sequential' in module 'CU'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0000 |                             0000
+                      LD |                             0001 |                             0001
+                    RXSL |                             0010 |                             0010
+                     DEC |                             0011 |                             0011
+                      LT |                             0100 |                             0110
+                     SUB |                             0101 |                             0100
+                     GTE |                             0110 |                             0101
+                    RSR0 |                             0111 |                             0111
+                    DONE |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'CS_reg' using encoding 'sequential' in module 'cu'
+WARNING: [Synth 8-327] inferring latch for variable 'CTRL_reg' [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/div_cntrl_unit.v:98]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                       0000000001 |                             0000
+                    LOAD |                       0000000010 |                             0001
+                    WAIT |                       0000000100 |                             0010
+                   DIVGO |                       0000001000 |                             0101
+                   DWAIT |                       0000010000 |                             0111
+                   MWAIT |                       0000100000 |                             0100
+                    PASS |                       0001000000 |                             1000
+                     CGO |                       0010000000 |                             0011
+                   CWAIT |                       0100000000 |                             0110
+                    DONE |                       1000000000 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'CS_reg' using encoding 'one-hot' in module 'full_control_unit'
+WARNING: [Synth 8-327] inferring latch for variable 'CTRL_reg' [C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.srcs/sources_1/new/full_control_unit.v:126]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 633.133 ; gain = 423.211
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input      5 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      5 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 48    
++---Registers : 
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 8     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   9 Input     15 Bit        Muxes := 1     
+	  10 Input     15 Bit        Muxes := 1     
+	   9 Input     14 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   4 Input     12 Bit        Muxes := 1     
+	  18 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   4 Input      5 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 6     
+	   9 Input      4 Bit        Muxes := 2     
+	  14 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 5     
+	   4 Input      4 Bit        Muxes := 2     
+	  10 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 9     
+	   9 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 1     
+	  16 Input      1 Bit        Muxes := 21    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module clk_gen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module button_debouncer 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module err_comparator 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module d_reg 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+Module d_reg__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module d_reg__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module CU 
+Detailed RTL Component Info : 
++---Muxes : 
+	   9 Input     15 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 1     
+	  14 Input      4 Bit        Muxes := 1     
+Module MUX1__mod 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      5 Bit        Muxes := 1     
+Module RF 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 2     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      5 Bit       Adders := 1     
++---XORs : 
+	   2 Input      5 Bit         XORs := 1     
++---Muxes : 
+	   4 Input      5 Bit        Muxes := 2     
+Module mux2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module d_reg__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module d_reg__parameterized3 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module d_reg__parameterized4 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module d_reg__parameterized5 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module half_adder 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module cla_gen 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
+Module d_reg__parameterized6 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module mux2__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module mux2__parameterized1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module y_reg 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module x_reg 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module r_reg 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module sub 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      5 Bit       Adders := 1     
+Module ud_counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module cu 
+Detailed RTL Component Info : 
++---Muxes : 
+	   9 Input     14 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 1     
+	  14 Input      4 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 1     
+Module mux2__parameterized2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module MUX1__parameterized0__mod 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+Module MUX1__parameterized1__mod 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+Module d_reg__parameterized7 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module d_reg__parameterized8 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module full_control_unit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	  10 Input     15 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   4 Input     12 Bit        Muxes := 1     
+	  18 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	  10 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 1     
+Module hex_to_7seg 
+Detailed RTL Component Info : 
++---Muxes : 
+	  16 Input      1 Bit        Muxes := 7     
+Module led_mux 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "fc2/fullCU_0/CTRL" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "clk0/count1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk0/clk_5KHz" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "bd/debounced_button0" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3917] design calcsys_top_level has port LEDOUT[7] driven by constant 1
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fc2/fullDP_0/div0/cu0/CTRL_reg[1] )
+INFO: [Synth 8-3886] merging instance 'fc2/fullDP_0/div0/cu0/CTRL_reg[2]' (LD) to 'fc2/fullDP_0/div0/cu0/CTRL_reg[7]'
+INFO: [Synth 8-3886] merging instance 'fc2/fullDP_0/div0/cu0/CTRL_reg[4]' (LD) to 'fc2/fullDP_0/div0/cu0/CTRL_reg[10]'
+INFO: [Synth 8-3886] merging instance 'fc2/fullCU_0/CTRL_reg[14]' (LD) to 'fc2/fullCU_0/CTRL_reg[13]'
+INFO: [Synth 8-3886] merging instance 'fc2/fullDP_0/multi0/s01REG8b_multi/q_reg[6]' (FDC) to 'fc2/fullDP_0/multi0/s23REG8b_multi/q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'fc2/fullDP_0/multi0/s01REG8b_multi/q_reg[7]' (FDC) to 'fc2/fullDP_0/multi0/s23REG8b_multi/q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'fc2/fullDP_0/div0/cu0/CTRL_reg[9]' (LD) to 'fc2/fullDP_0/div0/cu0/CTRL_reg[6]'
+INFO: [Synth 8-3886] merging instance 'fc2/fullDP_0/multi0/s23REG8b_multi/q_reg[1]' (FDC) to 'fc2/fullDP_0/multi0/s23REG8b_multi/q_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\fc2/fullDP_0/multi0/s23REG8b_multi/q_reg[0] )
+INFO: [Synth 8-3886] merging instance 'fc2/fullCU_0/CTRL_reg[12]' (LD) to 'fc2/fullCU_0/CTRL_reg[13]'
+INFO: [Synth 8-3886] merging instance 'fc2/fullDP_0/div0/cu0/CTRL_reg[12]' (LD) to 'fc2/fullDP_0/div0/cu0/CTRL_reg[11]'
+WARNING: [Synth 8-3332] Sequential element (fc2/fullDP_0/div0/cu0/CTRL_reg[1]) is unused and will be removed from module calcsys_top_level.
+WARNING: [Synth 8-3332] Sequential element (fc2/fullDP_0/multi0/s23REG8b_multi/q_reg[0]) is unused and will be removed from module calcsys_top_level.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 633.133 ; gain = 423.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------------+----------------------------------------------+-----------+----------------------+--------------+
+|Module Name       | RTL Object                                   | Inference | Size (Depth x Width) | Primitives   | 
++------------------+----------------------------------------------+-----------+----------------------+--------------+
+|calcsys_top_level | fc2/fullDP_0/smCalc0/dp0sc/rf1sc/RegFile_reg | Implied   | 4 x 5                | RAM32M x 2   | 
++------------------+----------------------------------------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 633.133 ; gain = 423.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 633.133 ; gain = 423.211
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 633.133 ; gain = 423.211
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 633.133 ; gain = 423.211
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 633.133 ; gain = 423.211
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 633.133 ; gain = 423.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 633.133 ; gain = 423.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 633.133 ; gain = 423.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 633.133 ; gain = 423.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |     8|
+|3     |LUT1   |    28|
+|4     |LUT2   |    14|
+|5     |LUT3   |    28|
+|6     |LUT4   |    37|
+|7     |LUT5   |    60|
+|8     |LUT6   |    54|
+|9     |MUXF7  |     4|
+|10    |RAM32M |     2|
+|11    |FDCE   |    82|
+|12    |FDPE   |     1|
+|13    |FDRE   |    53|
+|14    |LD     |    22|
+|15    |IBUF   |    15|
+|16    |OBUF   |    29|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------------------+----------------------+------+
+|      |Instance               |Module                |Cells |
++------+-----------------------+----------------------+------+
+|1     |top                    |                      |   439|
+|2     |  U4                   |led_mux               |    21|
+|3     |  bd                   |button_debouncer      |    20|
+|4     |  clk0                 |clk_gen               |    82|
+|5     |  fc2                  |fullcalc              |   269|
+|6     |    fullCU_0           |full_control_unit     |    61|
+|7     |    fullDP_0           |full_datapath         |   208|
+|8     |      div0             |divider               |    72|
+|9     |        cu0            |cu                    |    38|
+|10    |        d0             |dp                    |    34|
+|11    |          r0           |r_reg                 |    17|
+|12    |          u0           |ud_counter            |     7|
+|13    |          x0           |x_reg                 |     5|
+|14    |          y0           |y_reg                 |     5|
+|15    |      f0dreg           |d_reg                 |     8|
+|16    |      multi0           |multiplier            |    53|
+|17    |        a0_multi       |cla_gen               |     2|
+|18    |        a11_multi      |cla_gen_0             |     4|
+|19    |          cgen0        |c_gen                 |     1|
+|20    |        aREG4b_multi   |d_reg__parameterized2 |     8|
+|21    |        bREG4b_multi   |d_reg__parameterized3 |     6|
+|22    |        pOUT8b_multi   |d_reg__parameterized6 |    14|
+|23    |        s01REG8b_multi |d_reg__parameterized4 |    11|
+|24    |        s23REG8b_multi |d_reg__parameterized5 |     8|
+|25    |      outHI_reg        |d_reg__parameterized7 |    11|
+|26    |      outLO_reg        |d_reg__parameterized8 |    11|
+|27    |      smCalc0          |small_calc            |    45|
+|28    |        cu0sc          |CU                    |    43|
+|29    |        dp0sc          |DP                    |     2|
+|30    |          rf1sc        |RF                    |     2|
+|31    |      x0dreg           |d_reg__parameterized0 |     4|
+|32    |      y0dreg           |d_reg__parameterized1 |     4|
++------+-----------------------+----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 633.133 ; gain = 423.211
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 633.133 ; gain = 104.949
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 633.133 ; gain = 423.211
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 47 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 24 instances were transformed.
+  LD => LDCE: 22 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+178 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 633.133 ; gain = 423.211
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.runs/synth_1/calcsys_top_level.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 633.133 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue May 16 12:06:00 2017...

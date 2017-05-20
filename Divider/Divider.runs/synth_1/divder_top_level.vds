@@ -1,0 +1,503 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Tue May 16 00:14:37 2017
+# Process ID: 7100
+# Current directory: C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.runs/synth_1
+# Command line: vivado.exe -log divder_top_level.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source divder_top_level.tcl
+# Log file: C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.runs/synth_1/divder_top_level.vds
+# Journal file: C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source divder_top_level.tcl -notrace
+Command: synth_design -top divder_top_level -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 1100 
+WARNING: [Synth 8-2611] redeclaration of ansi port CS is not allowed [C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.srcs/sources_1/new/control_unit.v:57]
+WARNING: [Synth 8-976] CS has already been declared [C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.srcs/sources_1/new/control_unit.v:57]
+WARNING: [Synth 8-2654] second declaration of CS ignored [C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.srcs/sources_1/new/control_unit.v:57]
+INFO: [Synth 8-994] CS is declared here [C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.srcs/sources_1/new/control_unit.v:31]
+WARNING: [Synth 8-2254] instance name 'q3' matches net/port name [C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.srcs/sources_1/new/divder_top_level.v:58]
+WARNING: [Synth 8-2254] instance name 'q4' matches net/port name [C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.srcs/sources_1/new/divder_top_level.v:59]
+WARNING: [Synth 8-2254] instance name 'r3' matches net/port name [C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.srcs/sources_1/new/divder_top_level.v:61]
+WARNING: [Synth 8-2254] instance name 'r4' matches net/port name [C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.srcs/sources_1/new/divder_top_level.v:62]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 292.828 ; gain = 83.395
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'divder_top_level' [C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.srcs/sources_1/new/divder_top_level.v:21]
+INFO: [Synth 8-638] synthesizing module 'clk_gen' [C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.srcs/sources_1/new/divder_top_level.v:111]
+INFO: [Synth 8-256] done synthesizing module 'clk_gen' (1#1) [C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.srcs/sources_1/new/divder_top_level.v:111]
+INFO: [Synth 8-638] synthesizing module 'button_debouncer' [C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.srcs/sources_1/new/divder_top_level.v:201]
+	Parameter depth bound to: 16 - type: integer 
+	Parameter history_max bound to: 65535 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'button_debouncer' (2#1) [C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.srcs/sources_1/new/divder_top_level.v:201]
+INFO: [Synth 8-638] synthesizing module 'divider' [C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.srcs/sources_1/new/divder_top_level.v:77]
+INFO: [Synth 8-638] synthesizing module 'data_path' [C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.srcs/sources_1/new/data_path.v:22]
+INFO: [Synth 8-638] synthesizing module 'mux2' [C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.srcs/sources_1/new/data_path.v:50]
+	Parameter WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2' (3#1) [C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.srcs/sources_1/new/data_path.v:50]
+INFO: [Synth 8-638] synthesizing module 'mux2__parameterized0' [C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.srcs/sources_1/new/data_path.v:50]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2__parameterized0' (3#1) [C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.srcs/sources_1/new/data_path.v:50]
+INFO: [Synth 8-638] synthesizing module 'mux2__parameterized1' [C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.srcs/sources_1/new/data_path.v:50]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2__parameterized1' (3#1) [C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.srcs/sources_1/new/data_path.v:50]
+INFO: [Synth 8-638] synthesizing module 'y_reg' [C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.srcs/sources_1/new/data_path.v:108]
+INFO: [Synth 8-256] done synthesizing module 'y_reg' (4#1) [C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.srcs/sources_1/new/data_path.v:108]
+INFO: [Synth 8-638] synthesizing module 'x_reg' [C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.srcs/sources_1/new/data_path.v:67]
+WARNING: [Synth 8-567] referenced signal 'out' should be on the sensitivity list [C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.srcs/sources_1/new/data_path.v:102]
+INFO: [Synth 8-256] done synthesizing module 'x_reg' (5#1) [C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.srcs/sources_1/new/data_path.v:67]
+INFO: [Synth 8-638] synthesizing module 'r_reg' [C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.srcs/sources_1/new/data_path.v:143]
+INFO: [Synth 8-256] done synthesizing module 'r_reg' (6#1) [C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.srcs/sources_1/new/data_path.v:143]
+INFO: [Synth 8-638] synthesizing module 'comparator' [C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.srcs/sources_1/new/data_path.v:203]
+INFO: [Synth 8-256] done synthesizing module 'comparator' (7#1) [C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.srcs/sources_1/new/data_path.v:203]
+INFO: [Synth 8-638] synthesizing module 'sub' [C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.srcs/sources_1/new/data_path.v:219]
+INFO: [Synth 8-256] done synthesizing module 'sub' (8#1) [C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.srcs/sources_1/new/data_path.v:219]
+INFO: [Synth 8-638] synthesizing module 'ud_counter' [C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.srcs/sources_1/new/data_path.v:159]
+INFO: [Synth 8-256] done synthesizing module 'ud_counter' (9#1) [C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.srcs/sources_1/new/data_path.v:159]
+WARNING: [Synth 8-689] width (1) of port connection 'D' does not match port width (3) of module 'ud_counter' [C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.srcs/sources_1/new/data_path.v:46]
+INFO: [Synth 8-256] done synthesizing module 'data_path' (10#1) [C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.srcs/sources_1/new/data_path.v:22]
+WARNING: [Synth 8-350] instance 'd0' of module 'data_path' requires 23 connections, but only 22 given [C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.srcs/sources_1/new/divder_top_level.v:91]
+INFO: [Synth 8-638] synthesizing module 'control_unit' [C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.srcs/sources_1/new/control_unit.v:23]
+	Parameter IDLE bound to: 4'b0000 
+	Parameter LD bound to: 4'b0001 
+	Parameter RXSL bound to: 4'b0010 
+	Parameter DEC bound to: 4'b0011 
+	Parameter SUB bound to: 4'b0100 
+	Parameter GTE bound to: 4'b0101 
+	Parameter LT bound to: 4'b0110 
+	Parameter RSR0 bound to: 4'b0111 
+	Parameter DONE bound to: 4'b0100 
+	Parameter IDLE_0 bound to: 15'b111000000000000 
+	Parameter LD_1 bound to: 15'b111100100111000 
+	Parameter RXSL_2 bound to: 15'b111010010000000 
+	Parameter DEC_3 bound to: 15'b111000000010000 
+	Parameter SUB_4 bound to: 15'b011100000100000 
+	Parameter GTE_5 bound to: 15'b111010011000000 
+	Parameter LT_6 bound to: 15'b111010010000000 
+	Parameter RSR0_7 bound to: 15'b111001000000000 
+	Parameter DONE_8 bound to: 15'b100000000000010 
+WARNING: [Synth 8-151] case item 4'b0100 is unreachable [C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.srcs/sources_1/new/control_unit.v:68]
+WARNING: [Synth 8-151] case item 4'b0100 is unreachable [C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.srcs/sources_1/new/control_unit.v:106]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.srcs/sources_1/new/control_unit.v:106]
+INFO: [Synth 8-256] done synthesizing module 'control_unit' (11#1) [C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.srcs/sources_1/new/control_unit.v:23]
+INFO: [Synth 8-256] done synthesizing module 'divider' (12#1) [C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.srcs/sources_1/new/divder_top_level.v:77]
+INFO: [Synth 8-638] synthesizing module 'split' [C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.srcs/sources_1/new/divder_top_level.v:222]
+INFO: [Synth 8-256] done synthesizing module 'split' (13#1) [C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.srcs/sources_1/new/divder_top_level.v:222]
+INFO: [Synth 8-638] synthesizing module 'bcd_to_7seg' [C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.srcs/sources_1/new/divder_top_level.v:141]
+INFO: [Synth 8-256] done synthesizing module 'bcd_to_7seg' (14#1) [C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.srcs/sources_1/new/divder_top_level.v:141]
+INFO: [Synth 8-638] synthesizing module 'led_mux' [C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.srcs/sources_1/new/divder_top_level.v:163]
+INFO: [Synth 8-226] default block is never used [C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.srcs/sources_1/new/divder_top_level.v:187]
+INFO: [Synth 8-256] done synthesizing module 'led_mux' (15#1) [C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.srcs/sources_1/new/divder_top_level.v:163]
+INFO: [Synth 8-256] done synthesizing module 'divder_top_level' (16#1) [C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.srcs/sources_1/new/divder_top_level.v:21]
+WARNING: [Synth 8-3331] design data_path has unconnected port n[2]
+WARNING: [Synth 8-3331] design data_path has unconnected port n[1]
+WARNING: [Synth 8-3331] design data_path has unconnected port n[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 311.613 ; gain = 102.180
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 311.613 ; gain = 102.180
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.srcs/constrs_1/new/divider_contraints.xdc]
+Finished Parsing XDC File [C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.srcs/constrs_1/new/divider_contraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.srcs/constrs_1/new/divider_contraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/divder_top_level_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/divder_top_level_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 630.141 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 630.141 ; gain = 420.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 630.141 ; gain = 420.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 630.141 ; gain = 420.707
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "count1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_4sec" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk_5KHz" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "debounced_button0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "zeroflag" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "zeroflag" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'CS_reg' in module 'control_unit'
+INFO: [Synth 8-5544] ROM "control_signal" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "NS" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "NS" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "NS" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "NS" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                             0000
+                      LD |                              001 |                             0001
+                    RXSL |                              010 |                             0010
+                     DEC |                              011 |                             0011
+                      LT |                              100 |                             0110
+                     SUB |                              101 |                             0100
+                     GTE |                              110 |                             0101
+                    RSR0 |                              111 |                             0111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'CS_reg' using encoding 'sequential' in module 'control_unit'
+WARNING: [Synth 8-327] inferring latch for variable 'control_signal_reg' [C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.srcs/sources_1/new/control_unit.v:107]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 630.141 ; gain = 420.707
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   8 Input     15 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   3 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 6     
+	   8 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	  14 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 8     
+	  11 Input      1 Bit        Muxes := 35    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module clk_gen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module button_debouncer 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module mux2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module mux2__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module mux2__parameterized1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module y_reg 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module x_reg 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module r_reg 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module sub 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      5 Bit       Adders := 1     
+Module ud_counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module control_unit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input     15 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
+	  14 Input      3 Bit        Muxes := 1     
+Module split 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Muxes : 
+	   3 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+Module bcd_to_7seg 
+Detailed RTL Component Info : 
++---Muxes : 
+	  11 Input      1 Bit        Muxes := 7     
+Module led_mux 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "clk0/count1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk0/clk_5KHz" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "bd/debounced_button0" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design divder_top_level has unconnected port zerror
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\div0/cu0/control_signal_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\div0/cu0/control_signal_reg[2] )
+INFO: [Synth 8-3886] merging instance 'div0/cu0/control_signal_reg[3]' (LD) to 'div0/cu0/control_signal_reg[8]'
+INFO: [Synth 8-3886] merging instance 'div0/cu0/control_signal_reg[5]' (LD) to 'div0/cu0/control_signal_reg[11]'
+INFO: [Synth 8-3886] merging instance 'div0/cu0/control_signal_reg[7]' (LD) to 'div0/cu0/control_signal_reg[10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\div0/cu0/control_signal_reg[0] )
+WARNING: [Synth 8-3332] Sequential element (div0/cu0/control_signal_reg[14]) is unused and will be removed from module divder_top_level.
+WARNING: [Synth 8-3332] Sequential element (div0/cu0/control_signal_reg[11]) is unused and will be removed from module divder_top_level.
+WARNING: [Synth 8-3332] Sequential element (div0/cu0/control_signal_reg[10]) is unused and will be removed from module divder_top_level.
+WARNING: [Synth 8-3332] Sequential element (div0/cu0/control_signal_reg[9]) is unused and will be removed from module divder_top_level.
+WARNING: [Synth 8-3332] Sequential element (div0/cu0/control_signal_reg[8]) is unused and will be removed from module divder_top_level.
+WARNING: [Synth 8-3332] Sequential element (div0/cu0/control_signal_reg[6]) is unused and will be removed from module divder_top_level.
+WARNING: [Synth 8-3332] Sequential element (div0/cu0/control_signal_reg[4]) is unused and will be removed from module divder_top_level.
+WARNING: [Synth 8-3332] Sequential element (div0/cu0/control_signal_reg[2]) is unused and will be removed from module divder_top_level.
+WARNING: [Synth 8-3332] Sequential element (div0/cu0/control_signal_reg[1]) is unused and will be removed from module divder_top_level.
+WARNING: [Synth 8-3332] Sequential element (div0/cu0/control_signal_reg[0]) is unused and will be removed from module divder_top_level.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 630.141 ; gain = 420.707
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 630.141 ; gain = 420.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 630.141 ; gain = 420.707
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 630.141 ; gain = 420.707
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 630.141 ; gain = 420.707
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 630.141 ; gain = 420.707
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 630.141 ; gain = 420.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 630.141 ; gain = 420.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 630.141 ; gain = 420.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 630.141 ; gain = 420.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     8|
+|3     |LUT1   |    27|
+|4     |LUT2   |     2|
+|5     |LUT3   |    12|
+|6     |LUT4   |    13|
+|7     |LUT5   |    25|
+|8     |LUT6   |    17|
+|9     |MUXF7  |     4|
+|10    |FDCE   |    19|
+|11    |FDRE   |    53|
+|12    |IBUF   |    12|
+|13    |OBUF   |    25|
+|14    |OBUFT  |     1|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-----------------+------+
+|      |Instance |Module           |Cells |
++------+---------+-----------------+------+
+|1     |top      |                 |   219|
+|2     |  U4     |led_mux          |    15|
+|3     |  bd     |button_debouncer |    20|
+|4     |  clk0   |clk_gen          |    82|
+|5     |  div0   |divider          |    63|
+|6     |    cu0  |control_unit     |    29|
+|7     |    d0   |data_path        |    34|
+|8     |      r0 |r_reg            |     6|
+|9     |      u0 |ud_counter       |     6|
+|10    |      x0 |x_reg            |    18|
+|11    |      y0 |y_reg            |     4|
++------+---------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 630.141 ; gain = 420.707
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 12 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 630.141 ; gain = 102.180
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 630.141 ; gain = 420.707
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+77 Infos, 27 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 630.141 ; gain = 420.707
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.runs/synth_1/divder_top_level.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 630.141 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue May 16 00:15:07 2017...
