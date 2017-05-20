@@ -1,0 +1,79 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Tue May 16 12:06:32 2017
+| Host         : DESKTOP-41VVHGN running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file calcsys_top_level_control_sets_placed.rpt
+| Design       : calcsys_top_level
+| Device       : xc7a100t
+----------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    13 |
+| Unused register locations in slices containing registers |    58 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              42 |           13 |
+| No           | No                    | Yes                    |              41 |           14 |
+| No           | Yes                   | No                     |              33 |           10 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              42 |           16 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------+---------------------------------------+------------------+------------------+----------------+
+|         Clock Signal        |             Enable Signal             | Set/Reset Signal | Slice Load Count | Bel Load Count |
++-----------------------------+---------------------------------------+------------------+------------------+----------------+
+|  debouncedButton_BUFG       | fc2/fullDP_0/div0/cu0/E[0]            | rst_IBUF         |                1 |              4 |
+|  debouncedButton_BUFG       | fc2/fullDP_0/div0/cu0/Q[4]            | rst_IBUF         |                1 |              4 |
+|  debouncedButton_BUFG       | fc2/fullCU_0/q_reg[3][1]              | rst_IBUF         |                2 |              4 |
+|  debouncedButton_BUFG       | fc2/fullCU_0/q_reg[3][2]              | rst_IBUF         |                1 |              4 |
+|  debouncedButton_BUFG       | fc2/fullDP_0/div0/cu0/Q_reg[0][0]     | rst_IBUF         |                2 |              5 |
+|  fc2/fullDP_0/div0/cu0/CTRL |                                       |                  |                3 |              9 |
+|  debouncedButton_BUFG       | fc2/fullCU_0/FSM_onehot_CS[9]_i_1_n_0 | rst_IBUF         |                5 |             10 |
+|  debouncedButton_BUFG       | fc2/fullCU_0/q_reg[3][12]             | rst_IBUF         |                4 |             11 |
+|  fc2/fullCU_0/CTRL          |                                       |                  |                4 |             13 |
+|  debouncedButton_BUFG       | fc2/fullDP_0/smCalc0/cu0sc/we         |                  |                2 |             16 |
+|  clk0/clk                   |                                       |                  |                6 |             20 |
+|  clk100MHz_IBUF_BUFG        |                                       | rst_IBUF         |               10 |             33 |
+|  debouncedButton_BUFG       |                                       | rst_IBUF         |               14 |             41 |
++-----------------------------+---------------------------------------+------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 4      |                     4 |
+| 5      |                     1 |
+| 9      |                     1 |
+| 10     |                     1 |
+| 11     |                     1 |
+| 13     |                     1 |
+| 16+    |                     4 |
++--------+-----------------------+
+
+

@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Tue May 16 14:57:48 2017
+# Process ID: 5816
+# Current directory: C:/Users/Anahit Sarao/Desktop/New folder/Divider
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4728 C:\Users\Anahit Sarao\Desktop\New folder\Divider\Divider.xpr
+# Log file: C:/Users/Anahit Sarao/Desktop/New folder/Divider/vivado.log
+# Journal file: C:/Users/Anahit Sarao/Desktop/New folder/Divider\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Anahit Sarao/Desktop/New folder/Divider/Divider.xpr}

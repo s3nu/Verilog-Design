@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Tue May 16 12:05:29 2017
+# Process ID: 5532
+# Current directory: C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.runs/synth_1
+# Command line: vivado.exe -log calcsys_top_level.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source calcsys_top_level.tcl
+# Log file: C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.runs/synth_1/calcsys_top_level.vds
+# Journal file: C:/Users/Anahit Sarao/Documents/calcsys_integration/calcsys_integration.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source calcsys_top_level.tcl -notrace
